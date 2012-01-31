@@ -1,3 +1,6 @@
+[submodule "modules/common"]
+	path = modules/common
+	url = git://github.com/puppet-modules/puppet-common.git
 [submodule "modules/duplicity"]
 	path = modules/duplicity
 	url = git@github.com:mattmcmanus/puppet-duplicity.git
@@ -10,9 +13,6 @@
 [submodule "modules/nginx"]
 	path = modules/nginx
 	url = git://github.com/BenoitCattie/puppet-nginx
-[submodule "modules/common"]
-	path = modules/common
-	url = git://github.com/puppet-modules/puppet-common.git
 [submodule "modules/apt"]
 	path = modules/apt
 	url = git://github.com/camptocamp/puppet-apt.git
