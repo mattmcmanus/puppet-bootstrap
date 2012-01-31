@@ -1,5 +1,5 @@
 class utils{
-  package { [ "curl", "lsof", "lynx", "nc", "screen", "strace", "tcpdump", "telnet", "wget", "git-core", "sar", "dstat", "htop", "iotop", "slurm", "multitail" ]: ensure => present }
+  package { [ "build-essential", "curl", "lsof", "lynx", "nc", "tmux", "strace", "tcpdump", "telnet", "wget", "git-core", "sar", "dstat", "htop", "iotop", "slurm", "multitail" ]: ensure => installed }
   
   service {
     "sysstat":

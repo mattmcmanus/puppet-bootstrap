@@ -5,15 +5,34 @@ import "modules.pp"
 
 filebucket { main: server => puppet }
 
+$platform = "$operatingsystem-$lsbdistcodename-$architecture"
+
 # global defaults
 File { backup => main }
-Exec { path => "/usr/bin:/usr/sbin/:/bin:/sbin" }
+# Default file parameters
+File {
+    ignore => [ '.svn', '.git', 'CVS' ],
+    owner  => "root",
+    group  => "root",
+    mode   => "644",
+}
+
+# default exec parameters
+Exec {
+    path => ["/bin", "/sbin", "/usr/bin", "/usr/sbin"],
+}
+
+# by default when we talk about a package we want to install it.
+Package {
+    ensure => installed,
+}
+
 
 Package {
-      provider => $operatingsystem ? {
-                debian => aptitude,
-                ubuntu => aptitude
-      }
+  provider => $operatingsystem ? {
+    debian => aptitude,
+    ubuntu => aptitude
+  }
 }
 
 
