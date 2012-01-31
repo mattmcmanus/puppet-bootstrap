@@ -1,0 +1,36 @@
+[submodule "modules/duplicity"]
+	path = modules/duplicity
+	url = git@github.com:mattmcmanus/puppet-duplicity.git
+[submodule "modules/ufw"]
+	path = modules/ufw
+	url = git://github.com/uggedal/puppet-module-ufw.git
+[submodule "modules/apache"]
+	path = modules/apache
+	url = git@github.com:mattmcmanus/puppet-apache.git
+[submodule "modules/nginx"]
+	path = modules/nginx
+	url = git://github.com/BenoitCattie/puppet-nginx
+[submodule "modules/common"]
+	path = modules/common
+	url = git://github.com/puppet-modules/puppet-common.git
+[submodule "modules/apt"]
+	path = modules/apt
+	url = git://github.com/camptocamp/puppet-apt.git
+[submodule "modules/postfix"]
+	path = modules/postfix
+	url = git://github.com/camptocamp/puppet-postfix.git
+[submodule "modules/munin"]
+	path = modules/munin
+	url = https://github.com/puppet-modules/puppet-munin.git
+[submodule "modules/sudoers"]
+	path = modules/sudoers
+	url = https://github.com/mcrute/puppet-sudoers.git
+[submodule "modules/mysql"]
+	path = modules/mysql
+	url = git@github.com:mattmcmanus/puppet-mysql.git
+[submodule "modules/monit"]
+	path = modules/monit
+	url = https://github.com/deck/puppet-monit.git
+[submodule "modules/hardening"]
+	path = modules/hardening
+	url = git@github.com:mattmcmanus/puppet-hardening.git
